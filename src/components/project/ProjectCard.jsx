@@ -29,12 +29,12 @@ function ProjectCard({project}) {
        <p className='font-bold opacity-60'>{project.Backend}</p></>}
        </div>
        <div className='flex justify-evenly '>
-       <a className='bg-green-600 text-2xl p-5 rounded-md hover:bg-green-300'><i className="fa-brands fa-github"></i> <button>Github</button></a>
+       <a className='bg-green-600 text-2xl p-5 rounded-md hover:bg-green-300' href={project.gith} target='_blank'><i className="fa-brands fa-github"></i> <button>Github</button></a>
        
        {
         project.live ? <><span className='bg-green-600 text-2xl p-5 rounded-md hover:bg-green-300'>
-        <Link to='/project/details'  state={{pro:project}} >
-          <i className="fa-solid fa-circle-info"></i><button >Live</button></Link></span></>:<><span className='bg-green-600 text-2xl p-5 rounded-md hover:bg-green-300'>
+        
+        <i className="fa-brands fa-telegram"></i><button >Live</button></span></>:<><span className='bg-green-600 text-2xl p-5 rounded-md hover:bg-green-300'>
        <Link to='/project/details'  state={{pro:project}} >
          <i className="fa-solid fa-circle-info"></i><button >Details</button></Link></span></>
        }

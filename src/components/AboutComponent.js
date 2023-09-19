@@ -1,5 +1,6 @@
 import React from 'react'
 import AboutPic from '../assets/profile.jpg'
+import Resume from '../assets/resume/Santhosh T.pdf'
 import '../components/ComponentsStyles.css'
 function AboutComponent() {
   return (
@@ -35,7 +36,7 @@ function AboutComponent() {
         </div>
         
         <div className="resumebtn">
-            <a href="https://drive.google.com/file/d/1rZiXl562q7aVyk1kJ2nO85YBAq8ixTiw/view" target="_blank" className="btn"><span>Resume</span>
+            <a href={Resume} target="_blank" className="btn"><span>Resume</span>
                 <i className="fas fa-chevron-right"></i>
             </a>
         </div>
