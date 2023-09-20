@@ -10,6 +10,7 @@ import { Link, useLocation } from 'react-router-dom';
 const ProjectDetail = (props) => {
   const location = useLocation();
   const pro=location.state.pro;
+  const img1=location.state.img;
   const concatenatedNames = pro.FrontEnd.join(', ');
   return (
 <div className='tc'>
@@ -22,7 +23,7 @@ const ProjectDetail = (props) => {
   <div className="container">
     <div className="content">
       <div className="image-box">
-        <img draggable="false" src={pro.image} alt="" />
+        <img draggable="false" src={img1} alt="" />
       </div>
     <form id="contact-form">
       

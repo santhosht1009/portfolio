@@ -35,7 +35,7 @@ function ProjectCard({project}) {
         project.live ? <><span className='bg-green-600 text-2xl p-5 rounded-md hover:bg-green-300'>
         
         <i className="fa-brands fa-telegram"></i><button >Live</button></span></>:<><span className='bg-green-600 text-2xl p-5 rounded-md hover:bg-green-300'>
-       <Link to='/project/details'  state={{pro:project}} >
+       <Link to='/project/details'  state={{pro:project ,img:project.image}} >
          <i className="fa-solid fa-circle-info"></i><button >Details</button></Link></span></>
        }
        
