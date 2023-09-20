@@ -666,6 +666,14 @@ form .button-area {
     margin-right: 2rem;
   }
 }
+
+@media (max-width: 1024px) {
+
+  .contact .container {
+    margin: 0 0 0 0;
+  }
+
+}
 /* contact section media queries ends */
 /* contact section ends */
 
